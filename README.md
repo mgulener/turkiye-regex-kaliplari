@@ -18,7 +18,7 @@
                 <h3>Kabul edilen formatlar</h3>
                 <p><i>12345678901</i></p>
                 <h3>Regex</h3>
-                <pre>/^[0-9]{11}$/</pre>
+                <pre>/^[1-9]{1}[0-9]{10}$</pre>
             </div>
             <div class="regex-item">
                 <h2>Vergi Numarası</h2>
