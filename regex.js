@@ -18,7 +18,7 @@ function phoneRegEx(val) {
 
 // TC Kimlik No
 function IdNumberRegEx(val) {
-    return /^[0-9]{11}$/.test(val);
+    return /^[1-9]{1}[0-9]{10}$/.test(val);
     /*
     12345678901
     */
