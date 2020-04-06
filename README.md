@@ -16,9 +16,9 @@
             <div class="regex-item">
                 <h2>TC Kimlik Numarası</h2>
                 <h3>Kabul edilen formatlar</h3>
-                <p><i>12345678901</i></p>
+                <p><i>12345678902</i> <i>12345678900</i></p>
                 <h3>Regex</h3>
-                <pre>/^[1-9]{1}[0-9]{10}$</pre>
+                <pre>^[1-9]{1}[0-9]{9}[02468]{1}$</pre>
             </div>
             <div class="regex-item">
                 <h2>Vergi Numarası</h2>
