@@ -36,12 +36,12 @@
             <div class="regex-item">
                 <h2>TC Kimlik Numarası</h2>
                 <h3>Kabul edilen formatlar</h3>
-                <p><i>12345678901</i></p>
+                <p><i>12345678900</i> (son rakamı çift olan sayılar)</p>
                 <h3>Regex</h3>
-                <code>/^[0-9]{11}$/</code>
+                <code>/^[1-9]{1}[0-9]{9}[02468]{1}$/</code>
                 <h3>Örnek</h3>
                 <div class="sample">
-                    <input type="text" value="12345678901" id="txtIDNumber" maxlength="11">
+                    <input type="text" value="12345678900" id="txtIDNumber" maxlength="11">
                     <input type="button" value="Test" id="btnIDNumber">
                     <p class="success"></p>
                 </div>
