@@ -55,7 +55,7 @@ function carPlateRegEx(val) {
 
 // Doğum Tarihi
 function birthdayRegEx(val) {
-    return /^([1-9]|[12][0-9]|3[01])(\/?\.?\-?\s?)(0[1-9]|1[12])(\/?\.?\-?\s?)(19[0-9][0-9]|20[0][0-9]|20[1][0-8])$/.test(val);
+    return /^([1-9]|[12][0-9]|3[01])(|\/|\.|\-|\s)?(0[1-9]|1[12])\2(19[0-9]{2}|200[0-9]|201[0-8])$/.test(val);
     /*
     13.08.1987
     13081987
@@ -66,22 +66,22 @@ function birthdayRegEx(val) {
 }
 
 /* Button Clicks */
-var clicks = function(button,input,regex){
-    document.querySelector(button).onclick = function(){
-        if(regex(document.querySelector(input).value)){
+var clicks = function (button, input, regex) {
+    document.querySelector(button).onclick = function () {
+        if (regex(document.querySelector(input).value)) {
             document.querySelector(button).nextElementSibling.innerHTML = "Başarılı";
-          } else {
+        } else {
             document.querySelector(button).nextElementSibling.innerHTML = "Başarısız";
-          }
+        }
     }
 }
 
-window.onload = function(){
-    clicks("#btnMobilePhone","#txtMobilePhone",mobilePhoneRegEx);
-    clicks("#btnPhone","#txtPhone",phoneRegEx);
-    clicks("#btnIDNumber","#txtIDNumber",IdNumberRegEx);
-    clicks("#btnTaxNumber","#txtTaxNumber",taxNoRegEx);
-    clicks("#btnCreditCardNumber","#txtCreditCardNumber",creditCardRegEx);
-    clicks("#btnCarPlate","#txtCarPlate",carPlateRegEx);
-    clicks("#btnBirthday","#txtBirthday",birthdayRegEx);
+window.onload = function () {
+    clicks("#btnMobilePhone", "#txtMobilePhone", mobilePhoneRegEx);
+    clicks("#btnPhone", "#txtPhone", phoneRegEx);
+    clicks("#btnIDNumber", "#txtIDNumber", IdNumberRegEx);
+    clicks("#btnTaxNumber", "#txtTaxNumber", taxNoRegEx);
+    clicks("#btnCreditCardNumber", "#txtCreditCardNumber", creditCardRegEx);
+    clicks("#btnCarPlate", "#txtCarPlate", carPlateRegEx);
+    clicks("#btnBirthday", "#txtBirthday", birthdayRegEx);
 }
