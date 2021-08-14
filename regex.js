@@ -9,10 +9,10 @@ function mobilePhoneRegEx(val) {
 
 // Sabit Telefon Numarası
 function phoneRegEx(val) {
-    return /^(0)([0-9]{3})\s?([0-9]{3})\s?([0-9]{2})\s?([0-9]{2})$/.test(val);
+    return /^(0)([2348]{1})([0-9]{2})\s?([0-9]{3})\s?([0-9]{2})\s?([0-9]{2})$/.test(val);
     /*
-    01231231212
-    0123 123 12 12
+    02231231212
+    0223 123 12 12
     */
 }
 

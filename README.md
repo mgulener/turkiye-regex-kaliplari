@@ -9,9 +9,9 @@
             <div class="regex-item">
                 <h2>Sabit Telefonu Numarası</h2>
                 <h3>Kabul edilen formatlar</h3>
-                <p><i>01231231212<br>0123 123 12 12</i></p>
+                <p><i>02231231212<br>0223 123 12 12</i></p>
                 <h3>Regex</h3>
-                <pre>/^(0)([0-9]{3})\s?([0-9]{3})\s?([0-9]{2})\s?([0-9]{2})$/</pre>
+                <pre>/^(0)([2348]{1})([0-9]{2})\s?([0-9]{3})\s?([0-9]{2})\s?([0-9]{2})$/</pre>
             </div>
             <div class="regex-item">
                 <h2>TC Kimlik Numarası</h2>
