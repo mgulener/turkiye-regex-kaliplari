@@ -98,6 +98,19 @@
                     <p class="success"></p>
                 </div>
             </div>
+            <div class="regex-item">
+                <h2>Fatura Numarası</h2>
+                <h3>Kabul edilen formatlar</h3>
+                <p><i>ABC2025123456789</i></p>
+                <h3>Regex</h3>
+                <code>^[A-Z0-9]{3}\d{13}$</code>
+                <h3>Örnek</h3>
+                <div class="sample">
+                    <input type="text" value="ABC2025123456789" id="txtInvoiceNumber">
+                    <input type="button" value="Test" id="btnInvoiceNumber">
+                    <p class="success"></p>
+                </div>
+            </div>
         </div>
     </div>
     <script type="text/javascript" src="regex.js"></script>
