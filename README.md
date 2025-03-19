@@ -48,4 +48,11 @@
                 <h3>Regex</h3>
                 <pre>/^([1-9]|[12][0-9]|3[01])(|\/|\.|\-|\s)?(0[1-9]|1[12])\2(19[0-9]{2}|200[0-9]|201[0-8])$/</pre>
             </div>
+            <div class="regex-item">
+                <h2>Fatura Numarası</h2>
+                <h3>Kabul edilen formatlar</h3>
+                <p><i>ABC2025123456789</i></p>
+                <h3>Regex</h3>
+                <pre>^[A-Z0-9]{3}\d{13}$</pre>
+            </div>
     </div>

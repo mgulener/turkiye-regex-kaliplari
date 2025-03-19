@@ -65,6 +65,14 @@ function birthdayRegEx(val) {
     */
 }
 
+// Fatura Numarası
+function invoiceNumberRegEx(val) {
+    return /^[A-Z0-9]{3}\d{13}$/.test(val);
+    /*
+    ABC2025123456789
+    */
+}
+
 /* Button Clicks */
 var clicks = function (button, input, regex) {
     document.querySelector(button).onclick = function () {
@@ -84,4 +92,5 @@ window.onload = function () {
     clicks("#btnCreditCardNumber", "#txtCreditCardNumber", creditCardRegEx);
     clicks("#btnCarPlate", "#txtCarPlate", carPlateRegEx);
     clicks("#btnBirthday", "#txtBirthday", birthdayRegEx);
+    clicks("#btnInvoiceNumber", "#txtInvoiceNumber", invoiceNumberRegEx);
 }
